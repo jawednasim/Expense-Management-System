@@ -1,0 +1,29 @@
+{
+  "name": "expense-management-system",
+  "version": "1.0.0",
+  "description": "Expense Tracker App",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jawednasim/Expense-Management-System.git"
+  },
+  "keywords": [],
+  "author": "jawed and Ahmad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jawednasim/Expense-Management-System/issues"
+  },
+  "homepage": "https://github.com/jawednasim/Expense-Management-System#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  }
+}
