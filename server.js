@@ -4,8 +4,12 @@ const morgan = require('morgan');
 const dotenv = require('dotenv');
 const colors = require('colors');
 const { Console } = require('console');
+const connectDb = require('./config/connectDb');
 //config env file
 dotenv.config();
+
+//database call
+connectDb();
 
 //rest objects
 const app = express()
@@ -18,7 +22,7 @@ app.use(cors())
 
 //routes 
 app.get('/', (req,res) => {
-    res.send("<h1>Hello from server</h1>");
+    res.send("<h1>Hello from Expense server</h1>");
 })
 
 //port
